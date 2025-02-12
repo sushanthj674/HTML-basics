@@ -5,15 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my html projects</title>
+  <style>
+    .btn {
+      cursor:pointer;
+      width: 100%;
+      border-radius: 10px;
+      height: 50px;
+      border: 0px;
+      box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.686);
+      background-color: rgba(255, 0, 255, 0.448);
+      color: rgba(255, 0, 255, 0.908);
+      letter-spacing: 5px;
+      font-size: 20px;
+      font-weight: 900;
+      font-family: fantasy;
+      margin: 10px 0px;
+      /* text-shadow: 0px 0px 1px white; */
+    }
+    .btn:hover{
+      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.31);
+      box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.686) ,0px 0px 5px rgba(255, 255, 255, 0.626) ;
+    }
+  </style>
 </head>
 
 <body style="background-color: black; text-align: center; font-family: fantasy;">
   <h1 style="color: whitesmoke; font-size: 60px; text-shadow: 0px 0px 30px white; letter-spacing: 20px;">my web pages
   </h1>
-  <main style="width: 300px; aspect-ratio: 1;  margin: auto ; margin-top: 10%;">
-    <a href="./src/cartoon.html"><button
-        style="width: 100%; border-radius: 10px; height: 50px; border: 0px ; box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.686); background-color: rgba(255, 0, 255, 0.448); color: rgba(255, 0, 255, 0.908); letter-spacing: 5px; font-size: 20px; font-weight: 900;font-family: fantasy;">doremon</button></a>
-  </main>
+  <nav style="width: 300px; aspect-ratio: 1;  margin: auto ; margin-top: 10%;">
+    <a href="./src/cartoon.html"><button class="btn">doremon</button></a>
+    <a href="./src/fan.html"><button class="btn">summer's-backup</button></a>
+    <a href="./src/box-fidget.html"><button class="btn">box-fidget</button></a>
+  </nav>
 
 </body>
 

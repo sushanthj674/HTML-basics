@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Summer-backup</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #fan {
+      border-radius: 50%;
+      width: 200px;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotate {
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      ‰
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="fan"
+    src="https://png.pngtree.com/png-vector/20220621/ourmid/pngtree-fan-blades-rotate-motor-powered-icon-png-image_5239858.png"
+    alt="Fan">
+
+  <br><br>
+
+  <button id="onButton">Turn On</button>
+  <button id="offButton" class="off">Turn Off</button>
+
+  <script>
+
+    const fan = document.getElementById("fan");
+    const onButton = document.getElementById("onButton");
+    const offButton = document.getElementById("offButton");
+
+    onButton.addEventListener("click", () => {
+      fan.classList.add("rotate");
+      onButton.classList.add("off");
+      offButton.classList.remove("off");
+    });
+
+
+    offButton.addEventListener("click", () => {
+      fan.classList.remove("rotate");
+      onButton.classList.remove("off");
+      offButton.classList.add("off");
+
+    });
+
+  </script>
+
+</body>
+
+</html>
